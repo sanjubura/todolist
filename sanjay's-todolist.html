@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sanjay's_todolist.css">
+    <title>To-Do List</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="navbar">
+            <h1>To-Do List</h1>
+        </div>
+    </nav>
+
+    <div class="todo-container">
+        <div class="todo-box">
+            <h2>Add Events</h2>
+            <div class="input-container">
+                <input type="text" id="eventInput" placeholder="Type your event...">
+                <select id="prioritySelect">
+                    <option value="more">More</option>
+                    <option value="medium">Medium</option>
+                    <option value="less">Less</option>
+                </select>
+                <button onclick="addEvent()">Add</button>
+            </div>
+            <div class="dropdown">
+                <label for="filterSelect">Filter: </label>
+                <select id="filterSelect" onchange="filterEvents()">
+                    <option value="recently">Recently Added</option>
+                    <option value="priority">Priority</option>
+                    <option value="ongoing">Ongoing</option>
+                    <option value="completed">Completed</option>
+                </select>
+            </div>
+            <ul id="eventList"></ul>
+            <div id="counts"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Made by Sanjay</p>
+    </footer>
+
+    <script src="./sanjay's_todolist.js"></script>
+</body>
+
+</html>
